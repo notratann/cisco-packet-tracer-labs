@@ -10,10 +10,13 @@ The goal is to move beyond theoretical learning by building, configuring and tro
 
 Labs
 
-#| Lab| Concepts
+#| Lab | Concepts
 01| "Wireless Router and Client Configuration" (./01-wireless-router-client/)| DHCP, IPv4, WLAN, WPA2, connectivity testing
+
 02| Coming soon| IP addressing & subnetting
+
 03| Coming soon| Switching fundamentals
+
 04| Coming soon| VLANs & trunking
 
 Current Learning Path
