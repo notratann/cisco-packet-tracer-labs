@@ -39,3 +39,83 @@ The assigned IP configuration was verified on the client devices using:
 
 ```text
 ipconfig
+
+
+## 🔍 Verification
+
+The assigned IP configuration was verified on the client devices using:
+
+```text
+ipconfig
+
+Connectivity was then tested using ping between the PCs and the wireless router.
+
+The successful ping tests confirmed that the devices were able to communicate across the configured network.
+
+
+---
+
+📚 Skills Practiced
+
+DHCP configuration
+
+IPv4 addressing
+
+DHCP address pools
+
+Default gateway
+
+Automatic IP address assignment
+
+Router LAN configuration
+
+IP configuration with ipconfig
+
+Connectivity testing with ping
+
+Basic network troubleshooting
+
+
+
+---
+
+💡 Key Takeaways
+
+This lab reinforced how DHCP automatically provides clients with the network information required to communicate on an IPv4 network.
+
+I also practiced modifying a router's LAN network and DHCP address pool, renewing client configurations, and verifying connectivity between network devices.
+
+
+---
+
+🖼️ Screenshots
+
+Network Topology
+
+
+
+Connectivity Test
+
+
+
+
+---
+
+📁 Lab File
+
+The completed Packet Tracer topology is included in this directory:
+
+dhcp-wireless-router.pkt
+
+> This repository contains my own documentation, screenshots, and completed Packet Tracer topology. Cisco course instructions are not reproduced here.
+
+
+
+
+---
+
+🚀 Learning Progress
+
+This lab is part of my ongoing journey toward building practical skills in:
+
+Networking → IT Infrastructure → Cloud → Cybersecurity
