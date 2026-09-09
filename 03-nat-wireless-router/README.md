@@ -87,11 +87,11 @@ This helped reinforce the relationship between **private addressing, public addr
 
 ### Packet Before NAT Translation
 
-![Packet before NAT translation](./packet-before-nat.png)
+![Packet before NAT translation](./packet-before-NAT-translation.png)
 
 ### Packet After NAT Translation
 
-![Packet after NAT translation](./packet-after-nat.png)
+![Packet after NAT translation](./packet-after-NAT-translation.png)
 
 ## 📁 Lab File
 
