@@ -43,59 +43,96 @@ Sales ───────┘
 
 
 The network was then divided into separate routed networks:
-
+```
 Accounting ── Switch ──┐
                        │
 Finance ──── Switch ───┼── Edge Router
                        │
 Sales ────── Switch ───┘
+```
 
 The Finance and Sales hosts were renewed using DHCP so that they received addresses from their newly assigned IPv4 networks.
-🔍 Traffic Analysis
+
+## 🔍 Traffic Analysis
+
 Cisco Packet Tracer Simulation Mode was used to observe how an ICMP ping and the associated ARP traffic moved through the network.
-Before Routing
+
+### Before Routing
+
 When the departments were part of the same IPv4 network, an ARP request was sent as a broadcast.
+
 The broadcast was propagated through the shared Layer 2 network, meaning devices across the LAN had to process the ARP request even when they were not the intended destination.
-After Routing
+
+### After Routing
+
 After the network was divided into separate IPv4 networks, the router became the boundary between the networks.
+
 ARP broadcasts were limited to the local network instead of being propagated across all departments.
+
 This demonstrated how routers separate broadcast domains and how network segmentation can reduce unnecessary broadcast traffic.
-📊 Packet Comparison
-The packet headers were inspected using the Inbound PDU Details and Outbound PDU Details sections in Packet Tracer.
-Packet Before Routing
+
+## 📊 Packet Comparison
+
+The packet headers were inspected using the **Inbound PDU Details** and **Outbound PDU Details** sections in Packet Tracer.
+
+### Packet Before Routing
+
 The packet details were examined before the traffic passed through the routing device.
-�
+
+![Packet before routing](./packet-before-routing.png)
+
 The screenshot shows the source and destination information contained in the packet as it travels within the network.
-Packet After Routing
+
+### Packet After Routing
+
 The packet details were then examined after the traffic passed through the router.
-�
+
+![Packet after routing](./packet-after-routing.png)
+
 Comparing the inbound and outbound information helped demonstrate how a router forwards traffic between different IPv4 networks.
-🖥️ Network Topology
-�
+
+## 🖥️ Network Topology
+
+![Network topology](./topology.png)
+
 The topology demonstrates the transition from a shared LAN toward a network design where separate departmental networks communicate through a router.
-📚 Skills Practiced
-IPv4 networking
-ARP
-MAC addresses
-IP addresses
-Broadcast traffic
-Broadcast domains
-Routers and Layer 3 forwarding
-Network segmentation
-DHCP
-ICMP / Ping
-Packet analysis
-Cisco Packet Tracer Simulation Mode
-Basic enterprise network design
-💡 Key Takeaways
+
+## 📚 Skills Practiced
+
+- IPv4 networking
+- ARP
+- MAC addresses
+- IP addresses
+- Broadcast traffic
+- Broadcast domains
+- Routers and Layer 3 forwarding
+- Network segmentation
+- DHCP
+- ICMP / Ping
+- Packet analysis
+- Cisco Packet Tracer Simulation Mode
+- Basic enterprise network design
+
+## 💡 Key Takeaways
+
 This lab demonstrated why dividing a large enterprise network into multiple IPv4 networks can improve network efficiency.
+
 The most useful part of the exercise was observing ARP traffic before and after routing. In the original shared LAN, ARP broadcasts could reach devices across the network. After introducing separate routed networks, the broadcasts were contained within their local network.
+
 This reinforced the relationship between:
-MAC addresses → ARP → IPv4 networks → Broadcast Domains → Routing
-📁 Lab File
+
+**MAC addresses → ARP → IPv4 networks → Broadcast Domains → Routing**
+
+## 📁 Lab File
+
 The completed Packet Tracer topology is included in this directory:
-observe-traffic-flow-routed-network.pkt
-This repository contains my own documentation, screenshots, and completed Packet Tracer topology. Cisco course instructions are not reproduced here.
-🚀 Learning Progress
+
+`observe-traffic-flow-routed-network.pkt`
+
+> This repository contains my own documentation, screenshots, and completed Packet Tracer topology. Cisco course instructions are not reproduced here.
+
+## 🚀 Learning Progress
+
 This lab is part of my ongoing journey toward building practical skills in:
-Networking → IT Infrastructure → Cloud → Cybersecurity
+
+**Networking → IT Infrastructure → Cloud → Cybersecurity**
